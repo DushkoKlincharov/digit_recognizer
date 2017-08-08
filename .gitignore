@@ -2,3 +2,5 @@ env/
 image.png
 __pycache__/
 node_modules/
+.vscode/
+
