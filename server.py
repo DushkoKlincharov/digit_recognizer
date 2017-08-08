@@ -11,7 +11,7 @@ variables = tf.recognize.load()
 def index():
     """index"""
     if request.method == 'GET':
-        return render_template('index.html')
+        return render_template('index.ejs')
     else:
         image_data = request.json['image'].replace("data:image/png;base64,", "")
         t = open("image.png", "wb")
