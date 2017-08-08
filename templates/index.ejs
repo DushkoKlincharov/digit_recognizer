@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>DJ</title>
+    <meta charset="UTF-8">
+    <style>
+        canvas {
+            padding-left: 0;
+            padding-right: 0;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+        }
+
+        #outer {
+            width: 100%;
+            text-align: center;
+        }
+
+        .inner {
+            display: inline-block;
+        }
+    </style>
+</head>
+
+
+<body>
+
+    <canvas id="myCanvas" width="450" height="450" style="border:1px solid #000000;">
+    </canvas>
+    </br>
+
+    <div id="outer">
+        <div class="inner"><button type="submit" id="btnRecognize">Recognize</button></div>
+        <div class="inner"><button type="submit" id="btnClear">Clear</button></div>
+    </div>
+    </br>
+
+    <div style="text-align: center;">
+        <span id="result"></span></br>
+         <span id="probArray"></span> 
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="canvas.js"></script>
+
+</body>
+
+</html>

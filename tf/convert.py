@@ -16,3 +16,6 @@ def convert():
     offset = (14 - y, 14 - x)
     new_img.paste(img, offset)
     new_img.save('image.png')
+
+if __name__ == "__main__":
+    convert()

@@ -16,7 +16,6 @@ $("#btnRecognize").click(function () {
         contentType: "application/json",
         dataType: 'json',
         success: function(data) {
-            // console.log(data)
             $("#result").html(data.max_value);
             $("#probArray").html(JSON.stringify(data.prob_array).replace(new RegExp('"', 'g'),""))    
         }

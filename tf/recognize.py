@@ -51,3 +51,7 @@ def recognize(x, y, keep_prob, sess):
     prob_array_rounded = [str(round(x, 3)) for x in resulting_arr]
     result["prob_array"] = prob_array_rounded
     return json.dumps(result)
+
+if __name__ == "__main__":
+    values = load()
+    print(recognize(values[0], values[1], values[2], values[3]))
